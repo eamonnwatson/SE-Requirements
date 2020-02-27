@@ -9,7 +9,7 @@ namespace SEConsole
         {
             var parser = new Parser();
 
-            parser.GetData();
+            
         }
     }
 }
