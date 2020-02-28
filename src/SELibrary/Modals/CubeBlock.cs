@@ -12,8 +12,10 @@ namespace SELibrary.Modals
         public string Description { get; set; }
         public string CubeSize { get; set; }
         public string Public { get; set; }
-        
-        public IEnumerable<Component> Components { get; set; }
+        public string TopPart { get; set; }
+        public decimal MaterialEfficiency { get; set; }
+        public IList<ParseComponent> Components { get; } = new List<ParseComponent>();
+        public IList<BlueprintClass> BlueprintClasses { get; } = new List<BlueprintClass>();
         public int PCU { get; set; }
     }
 }
