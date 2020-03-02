@@ -4,9 +4,9 @@ using System.Text;
 
 namespace SELibrary.Modals
 {
-    class ParseComponent
+    public enum CubeSize
     {
-        public string SubType { get; set; }
-        public int Count { get; set; }
+        Large,
+        Small
     }
 }

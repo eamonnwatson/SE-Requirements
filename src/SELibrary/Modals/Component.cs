@@ -6,11 +6,16 @@ namespace SELibrary.Modals
 {
     public class Component : BaseItem, IManufacturedItem
     {
-        public IEnumerable<(decimal, Ingot)> Ingots { get; internal set; }
-        internal Component() { }
-        public IEnumerable<(int, Ingot)> CalculateIngots()
+        public List<ItemGroup> Requirements { get; set; }
+
+        public IEnumerable<ItemGroup> GetComponents()
         {
-            throw new NotImplementedException();
+            return new List<ItemGroup>();
+        }
+
+        public IEnumerable<ItemGroup> GetIngots()
+        {
+            return Requirements;
         }
     }
 }
